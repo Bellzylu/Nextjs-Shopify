@@ -1,58 +1,87 @@
 "use client";
-import Image from "next/image";
-import { useState } from "react";
+import { Box } from "./Box";
+
+import { Canvas } from "@react-three/fiber";
+import StarRating from "./StarRating";
+import { StylingModal } from "./StylingModal";
+
+/**
+ * Left pad hack for multiline strings (code snippets)
+ */
+function leftPad(lines: string) {
+  return lines
+    .split("\n")
+    .map((line, index) => (index === 0 ? line : "  " + line))
+    .join("\n");
+}
+
+const starsCode = leftPad(`<div className="rating">
+  <input type="radio" 
+  name="rating-1"
+  className="mask mask-star" />
+
+  <input type="radio" 
+  name="rating-1"
+  className="mask mask-star"
+   checked />
+  <input type="radio"
+   name="rating-1"
+   className="mask mask-star" />
+  <input type="radio" name="rating-1"
+   className="mask mask-star" />
+  <input type="radio" name="rating-1" 
+  className="mask mask-star" />
+</div>};`);
+
+const boxCode = leftPad(`<Canvas>
+  <ambientLight />
+  <pointLight position={[10, 10, 10]} />
+  <Box position={[-1.2, 0, 0]} />
+  <Box position={[1.2, 0, 0]} />
+</Canvas>`);
 
 export default function Home() {
-  const [count, setCount] = useState(0);
-
-  const handleClickIncrement = () => {
-    setCount(count + 1);
-  };
-
-  const handleClickDecrement = () => {
-    setCount(count - 1);
-  };
-  console.log(count);
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer">
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-      <div className="relative flex place-items-center">
-        <div className="p-2 mx-2">
-          <button className="p-2 mx-2" onClick={handleClickIncrement}>
-            Increment me
-          </button>
-          <span>{count}</span>
-          <button className="p-2 mx-2" onClick={handleClickDecrement}>
-            Decrement me
-          </button>
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-between ">
+      <div className="hero min-h-screen">
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold text-slate-100">
+              Hello World
+            </h1>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {/* Rest of the code */}
+            <div className="mockup-phone">
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard artboard-demo phone-1">
+                  <Canvas className="max-h-[300px]">
+                    <ambientLight />
+                    <pointLight position={[10, 10, 10]} />
+                    <Box position={[-1.2, 0, 0]} />
+                    <Box position={[1.2, 0, 0]} />
+                  </Canvas>
+                  <StarRating />
+                  <div className="flex flex-col w-full gap-5 px-12">
+                    <StylingModal
+                      buttonText="See box styling"
+                      libraryName="React-three-fiber"
+                      link="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
+                      code={boxCode}
+                    />
+
+                    <StylingModal
+                      buttonText="See stars Styling"
+                      libraryName="Daisy UI rating stars"
+                      code={`${starsCode}`}
+                      link={"https://daisyui.com/components/rating/"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
