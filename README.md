@@ -7,6 +7,8 @@ This is a basic app using Next.js, React, TypeScript, Taliwind css, Daisy UI and
 I wanted to just test a simple way to use the different frameworks and liberaries. I have not tried Daisy or React-three-fiber before so that was new to me. 
 The app is just an iphone placeholder with some moving 3D boxes inside, and some stars where you can rate (Im not storing any rating, so go on and rate).
 The two buttons you can click will show you the HTML syntax for the elements used and links to docs, so you can try it yourself/or contribute to this project 
+The app is not the prettiest so far, but the point was more to test Daisy and three-fiber.. Anyways, here is a sneak peak: 
+<img width="518" alt="Screenshot 2023-12-13 at 00 56 06" src="https://github.com/Bellzylu/next-three-tw-daisyui/assets/101601962/22c8df19-a6df-473d-bc06-f3c61416f7f4">
 
 ## Getting Started 🕵️
 ### (More eloborated steps are coming-stay put or email me if you have any questions)
