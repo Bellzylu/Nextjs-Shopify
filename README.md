@@ -13,8 +13,7 @@ The two buttons you can click will show you the HTML syntax for the elements use
 
 For now, you can just clone the project, 
 and run the app in your local enviorment with 
-```
-bash
+```bash
 npm run dev
 yarn run dev
 bun run dev
