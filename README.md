@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-# Project Description 
+# Project Description 👩🏽‍🔬
 
 This is a basic app using Next.js, React, TypeScript, Taliwind css, Daisy UI and React-three-fiber for some 3D elements. 
 I wanted to just test a simple way to use the different frameworks and liberaries. I have not tried Daisy or React-three-fiber before so that was new to me. 
@@ -24,7 +24,7 @@ bun run dev
 ```
 or whatever you use to 🏃‍♀ stuff
 
-##Contributions 👨‍🚒
+## Contributions 👨‍🚒
 Feel free to create a branch and send a pull request. I would love to find out a better solution for styling the text inside the pop-ups (my current solution is a little jacky but works fine). Perhaps a better read up on the Daisy docs would be good...Anyways- would love to develop this further. The coolest thing would be to have all kinds of Daisy and 3D(three-fiber) elements over the page, and with a hover, you can see the code snipplets. Its a littly tricky to make this nice (yes, I tried), but I'm sure youll come up with something brainy for this one. Fingers crossed. And if you need me..
 
 Heres my ## Contact info:
