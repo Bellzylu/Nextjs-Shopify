@@ -27,7 +27,8 @@ or whatever you use to 🏃‍♀ stuff
 ## Contributions 👨‍🚒
 Feel free to create a branch and send a pull request. I would love to find out a better solution for styling the text inside the pop-ups (my current solution is a little jacky but works fine). Perhaps a better read up on the Daisy docs would be good...Anyways- would love to develop this further. The coolest thing would be to have all kinds of Daisy and 3D(three-fiber) elements over the page, and with a hover, you can see the code snipplets. Its a littly tricky to make this nice (yes, I tried), but I'm sure youll come up with something brainy for this one. Fingers crossed. And if you need me..
 
-Heres my ## Contact info:
+Here's my
+## Contact info:
 
 bellsylu@icloud.com
 
