@@ -1,24 +1,33 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+#Project Description 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This is a basic app using Next.js, React, TypeScript, Taliwind css, Daisy UI and React-three-fiber for some 3D elements. 
+I wanted to just test a simple way to use the different frameworks and liberaries. I have not tried Daisy or React-three-fiber before so that was new to me. 
+The app is just an iphone placeholder with some moving 3D boxes inside, and some stars where you can rate (Im not storing any rating, so go on and rate).
+The two buttons you can click will show you the HTML syntax for the elements used and links to docs, so you can try it yourself/or contribute to this project 🤷‍♀️
+
+## Getting Started (More eloborated steps are coming-stay put or email me if you have any questions)
+
+For now, you can just clone the project, 
+and run the app in your local enviorment with 
 ```
+bash
+npm run dev
+yarn run dev
+bun run dev
+```
+or whatever you use to 🏃‍♀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Contributions 👨‍🚒
+Feel free to create a branch and send a pull request. I would love to find out a better solution for styling the text inside the pop-ups (my current solution is a little jacky but works fine). Perhaps a better read up on the Daisy docs would be good...Anyways- would love to develop this further. The coolest thing would be to have all kinds of Daisy and 3D(three-fiber) elements over the page, and with a hover, you can see the code snipplets. Its a littly tricky to make this nice (yes, I tried), but I'm sure youll come up with something brainy for this one. Fingers crossed. And if you need me..
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Heres my ## Contact info:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+bellsylu@icloud.com
+
+
 
 ## Learn More
 
@@ -27,7 +36,11 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  Aand for getting started with Daisy: 
+- https://daisyui.com/docs/install/
+
+
+Also, if you want to look into Deplyment👇
 
 ## Deploy on Vercel
 
