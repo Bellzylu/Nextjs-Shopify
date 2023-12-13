@@ -8,7 +8,7 @@ I wanted to just test a simple way to use the different frameworks and liberarie
 The app is just an iphone placeholder with some moving 3D boxes inside, and some stars where you can rate (Im not storing any rating, so go on and rate).
 The two buttons you can click will show you the HTML syntax for the elements used and links to docs, so you can try it yourself/or contribute to this project 🤷‍♀️
 
-## Getting Started
+## Getting Started 🕵️
 ### (More eloborated steps are coming-stay put or email me if you have any questions)
 
 For now, you can just clone the project, 
