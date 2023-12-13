@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-#Project Description 
+# Project Description 
 
 This is a basic app using Next.js, React, TypeScript, Taliwind css, Daisy UI and React-three-fiber for some 3D elements. 
 I wanted to just test a simple way to use the different frameworks and liberaries. I have not tried Daisy or React-three-fiber before so that was new to me. 
